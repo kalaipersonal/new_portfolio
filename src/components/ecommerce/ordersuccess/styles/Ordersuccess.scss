@@ -1,0 +1,111 @@
+@use "../../../../scss/abstract/" as *;
+
+.odrer-success {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    @include xsBreakPoint {
+        padding-bottom: 20%;
+    }
+    @include smBreakPoint {
+        padding-bottom: 20%;
+    }
+    @include mdBreakPoint {
+        padding-bottom: 10%;
+    }
+}
+.backtologin {
+    width: 15%;
+    padding: 10px;
+    border: none;
+    background-color: orangered;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include xsBreakPoint {
+        width: 40%;
+        font-size: 1.2rem;
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+    @include smBreakPoint {
+        width: 35%;
+        font-size: 1.2rem;
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+    }
+    @include mdBreakPoint {
+        width: 23%;
+        font-size: 1.3rem;
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+    }
+    @include lgBreakPoint {
+        width: 20%;
+    }
+}
+.img-order-split {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.success-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gifyts {
+    border-radius: 50px;
+    @include xsBreakPoint {
+        width: 90%;
+
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background-color: transparent;
+    }
+    @include smBreakPoint {
+        width: 80%;
+
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+    }
+    @include mdBreakPoint {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background-color: transparent;
+    }
+}
+
+.succs {
+    color: orangered;
+    font-weight: bold;
+}
+
+.thnks {
+    text-align: center;
+    color: orange !important;
+    font-weight: bold;
+   
+}

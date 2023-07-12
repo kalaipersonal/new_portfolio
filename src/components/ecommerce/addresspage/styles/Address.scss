@@ -1,0 +1,203 @@
+@use "../../../../scss/abstract/" as *;
+
+.address-page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+
+    .inside-address {
+        width: 100%;
+        height: 100%;
+        .title-address {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            .orders-food {
+                color: orangered;
+                font-weight: bold;
+            }
+        }
+        .bottom-section-address {
+            width: 100%;
+
+            .inside-bottom-address {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                @include xsBreakPoint {
+                    flex-direction: column;
+                }
+                @include smBreakPoint {
+                    flex-direction: column;
+                }
+                @include mdBreakPoint {
+                    flex-direction: column;
+                }
+            }
+
+            .left-address {
+                width: 50%;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                @include xsBreakPoint {
+                    width: 100%;
+                }
+                @include smBreakPoint {
+                    width: 100%;
+                }
+                @include mdBreakPoint {
+                    width: 100%;
+                }
+                @include lgBreakPoint {
+                    width: 100%;
+                }
+                @include xlBreakPoint {
+                    width: 100%;
+                }
+                .bur {
+                    width: 40%;
+                }
+            }
+            .right-address {
+                width: 50%;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                // height: 100%;
+                overflow-y: auto;
+                // margin-bottom: 10%;
+                //    background-color: red;
+                @include xsBreakPoint {
+                    width: 100%;
+                }
+                @include smBreakPoint {
+                    width: 100%;
+                }
+                @include mdBreakPoint {
+                    width: 100%;
+                }
+                @include lgBreakPoint {
+                    width: 100%;
+                }
+                @include xlBreakPoint {
+                    width: 100%;
+                }
+
+                .primarys {
+                    width: 25%;
+                    border: none;
+                    outline: none;
+                    padding: 10px;
+                    border-radius: 10px;
+                    background-color: orange;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    @include xsBreakPoint {
+                        width: 50%;
+                    }
+                    @include smBreakPoint {
+                        width: 50%;
+                    }
+                    @include mdBreakPoint {
+                        width: 50%;
+                    }
+                }
+                .primarys:hover {
+                    color: white;
+                    background-color: orange;
+                }
+            }
+        }
+    }
+    .cancels {
+        background-color: red;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        width: 30%;
+        @include xsBreakPoint {
+            width: 40%;
+        }
+        @include smBreakPoint {
+            width: 40%;
+        }
+        @include mdBreakPoint {
+            width: 40%;
+        }
+    }
+    .confirms {
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        width: 30%;
+        @include xsBreakPoint {
+            width: 40%;
+        }
+        @include smBreakPoint {
+            width: 40%;
+        }
+        @include mdBreakPoint {
+            width: 40%;
+        }
+    }
+    .list-address {
+        width: 60%;
+        // align-items: center;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid cyan;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 10px;
+        @include xsBreakPoint {
+            width: 80%;
+        }
+        @include smBreakPoint {
+            width: 80%;
+        }
+        @include mdBreakPoint {
+            width: 80%;
+        }
+        .names {
+            padding-left: 30%;
+            display: flex;
+            flex-direction: column;
+            @include xsBreakPoint {
+                padding-left: 10%;
+            }
+            @include smBreakPoint {
+                padding-left: 35%;
+            }
+            @include mdBreakPoint {
+                padding-left: 35%;
+            }
+        }
+        .span-name {
+            color: blueviolet;
+            font-weight: bold;
+        }
+        .span-names {
+            color: orange !important;
+            font-weight: bold;
+            padding-left: 2%;
+        }
+    }
+}

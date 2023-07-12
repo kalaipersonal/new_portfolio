@@ -1,0 +1,103 @@
+@use "../../../../scss/abstract/" as *;
+.login-screeen {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    @include xsBreakPoint {
+        padding-top: 20%;
+        overflow-y: auto;
+    }
+    @include smBreakPoint {
+        padding-top: 10%;
+        overflow-y: auto;
+    }
+    @include mdBreakPoint {
+        padding-top: 10%;
+        overflow-y: auto;
+    }
+
+    .login-inside {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        .login-left {
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+            .cars {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                @include lgBreakPoint {
+                    width: 100%;
+                }
+            }
+        }
+        .login-right {
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            @include xsBreakPoint {
+                width: 100%;
+                padding-top: 15%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                padding-top: 10%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            @include lgBreakPoint {
+                width: 100%;
+            }
+            @include xlBreakPoint {
+                width: 100%;
+            }
+            input {
+                background-color: white;
+                color: orangered;
+            }
+            .btns {
+                width: 65%;
+                padding: 6px;
+                background-color: orangered;
+                color: white;
+                font-size: 1.2em;
+                font-weight: 600;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                margin-top: 10%;
+            }
+        }
+    }
+}
